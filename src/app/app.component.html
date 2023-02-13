@@ -28,6 +28,21 @@
   </dl>
 </section>
 
+
+<h1>I think I got it!</h1>
+<div class="times-container">
+  <div class="period"
+    *ngFor="let item of dataItems">
+    <div class="period-title">{{item.title}}</div>
+    <div class="time-buttons">
+      <button class="time-button"
+        *ngFor="let time of item.times">
+        {{time.time}} / {{time.temp}}°F
+      </button>
+    </div>
+  </div>
+</div>
+
 <h1>Unstyled</h1>
 <div class="wrapper">
   <section class="unstyled">
